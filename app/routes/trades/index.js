@@ -1,10 +1,10 @@
-const validateParams = require("../middleware/validateParams");
+const validateParams = require("../../middleware/validateParams");
 const {
     createTradeController,
     getTradesController,
     updateTradeByIdController,
     deleteTradeByIdController,
-} = require("../controllers/trades");
+} = require("../../controllers/trades");
 const router = require('express').Router();
 
 router.post('/', validateParams([

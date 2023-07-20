@@ -1,4 +1,4 @@
-const validateParams = require("../middleware/validateParams");
+const validateParams = require("../../middleware/validateParams");
 const {
     createExchangerController,
     getExchangerByIdController,
@@ -6,7 +6,7 @@ const {
     updateExchangerByIdController,
     deleteExchangerController,
 } = require("../controllers/exchanger");
-const validateCurrencies = require("../middleware/validateCurrencies");
+const validateCurrencies = require("../../middleware/validateCurrencies");
 const router = require('express').Router();
 
 router.post('/', validateParams([

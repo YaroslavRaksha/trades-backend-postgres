@@ -1,20 +1,11 @@
-const validateParams = require("../middleware/validateParams");
+const validateParams = require("../../../middleware/validateParams");
 const {
-    createMorningExistenceController,
     getMorningExistenceController,
     putMorningExistenceController
-} = require("../controllers/morningExistence");
-const checkMorningExistence = require("../middleware/checkPutMorningExistence");
+} = require("../../controllers/morningExistence");
+const checkMorningExistence = require("../../middleware/checkPutMorningExistence");
 const router = require('express').Router();
 
-{/*
-router.post('/:id',
-    validateParams([
-        { key: 'body', value: 'date' },
-    ]),
-    checkMorningExistence({ throwErrorIfExists: true, }),
-    createMorningExistenceController);
-*/}
 
 router.get('/:id',
     validateParams([
