@@ -2,7 +2,7 @@ const pg = require('pg');
 const { Pool } = pg;
 
 const pool = new Pool({
-    connectionString: "postgres://default:T4LqQDYka2Hf@ep-jolly-resonance-114869-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb" + "?sslmode=require",
+    connectionString: process.env.POSTGRE_URL + "?sslmode=require",
 })
 
 const executeQuery = (query, params = []) => {
