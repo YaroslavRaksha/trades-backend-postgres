@@ -3,12 +3,12 @@ const getError = require("./helpers/getError");
 const app = express();
 const cors = require('cors');
 
-require('dotenv').config();
-app.use(express.json());
 app.use(cors({
     origin: 'https://trades-nextjs.vercel.app'
 }));
 
+require('dotenv').config();
+app.use(express.json());
 app.use('/exchanger', require('./routes/exchanger'));
 app.use('/morningExistence', require('./routes/morningExistence'));
 app.use('/trades', require('./routes/trades'));
