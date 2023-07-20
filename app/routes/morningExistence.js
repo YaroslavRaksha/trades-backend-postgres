@@ -1,9 +1,9 @@
-const validateParams = require("../../../middleware/validateParams");
+const validateParams = require("../middleware/validateParams");
 const {
     getMorningExistenceController,
     putMorningExistenceController
-} = require("../../controllers/morningExistence");
-const checkMorningExistence = require("../../middleware/checkPutMorningExistence");
+} = require("../controllers/morningExistence");
+const checkMorningExistence = require("../middleware/checkPutMorningExistence");
 const router = require('express').Router();
 
 
