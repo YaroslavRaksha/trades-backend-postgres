@@ -3,9 +3,7 @@ const getError = require("./helpers/getError");
 const app = express();
 const cors = require('cors');
 
-app.use(cors({
-    origin: 'https://trades-nextjs.vercel.app'
-}));
+app.use(cors('*'));
 
 require('dotenv').config();
 app.use(express.json());
