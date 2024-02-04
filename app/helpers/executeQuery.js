@@ -5,7 +5,7 @@ const { Pool } = pg;
 
 // postgresql://postgres:aIGzkEdYmVU15KrSsifq@containers-us-west-37.railway.app:7903/railway
 const pool = new Pool({
-    connectionString: "postgresql://postgres:aIGzkEdYmVU15KrSsifq@containers-us-west-37.railway.app:7903/railway",
+    connectionString: "postgresql://postgres:11cGDGefBcAeC52eB22fF32dafBcBGGA@roundhouse.proxy.rlwy.net:34220/railway",
 })
 
 const executeQuery = (query, params = []) => {
